@@ -7,6 +7,7 @@ case_output=$root/case/test$id
 
 test_root="D:/baiyong/compile_code/evaluate/c0/test$id.txt"
 echo $test_root > tmp
+cat tmp
 "/mnt/d/baiyong/compile_code/compile_tmp/cmake-build-debug/compile_tmp.exe" < tmp > $case_output/log.txt
 rm -r tmp
 
